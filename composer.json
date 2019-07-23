@@ -17,8 +17,10 @@
     "symfony/css-selector": "^4.3"
   },
   "require-dev": {
-    "php": ">=7.3.0",
-    "suin/phpcs-psr4-sniff": "^2.0"
+    "phpunit/phpunit": "^8.2"
+  },
+  "scripts": {
+    "test": "phpunit"
   },
   "autoload": {
     "psr-4": {
