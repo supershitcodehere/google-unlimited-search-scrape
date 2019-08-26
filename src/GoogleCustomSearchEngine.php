@@ -63,7 +63,7 @@ class GoogleCustomSearchEngine{
     }
 
     public static function parseJson($contents){
-        preg_match('/google\.search\.cse\.api\((.*?)\);/mis',$contents,$m);
+        preg_match('/google\.search\.cse\.api\((.*?)\);$/mis', $contents, $m);
         if(empty($m[1])){
             throw new GoogleCustomSearchEngineException("Failed to parse json");
         }
